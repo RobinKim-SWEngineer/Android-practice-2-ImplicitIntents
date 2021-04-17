@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">You will make it</string>
+    <string name="button_toast">TOAST</string>
+    <string name="button_count">COUNT</string>
+    <string name="button_reset">RESET</string>
+    <string name="textView_toast">0</string>
+    <string name="message_toast">TOAST!!</string>
+</resources>
