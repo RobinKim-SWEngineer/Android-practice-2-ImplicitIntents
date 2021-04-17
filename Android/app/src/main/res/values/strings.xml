@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ImplicitIntents</string>
+    <string name="editText_hint_webSite">http://developer.android.com</string>
+    <string name="button_webSite">Open Website</string>
+    <string name="editText_hint_location">Golden Gate Bridge</string>
+    <string name="button_location">Open Location</string>
+    <string name="editText_hint_sharingText">You are gonna make it, within a year</string>
+    <string name="button_sharingText">Share this Text</string>
+</resources>
