@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText_hint_webSite"
+        android:id="@+id/editText_webSite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/editText_hint_webSite"
@@ -24,7 +24,7 @@
         android:text="@string/button_webSite" />
 
     <EditText
-        android:id="@+id/editText_hint_location"
+        android:id="@+id/editText_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/editText_hint_location"
@@ -39,7 +39,7 @@
         android:text="@string/button_location" />
 
     <EditText
-        android:id="@+id/editText_hint_sharingText"
+        android:id="@+id/editText_sharingText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/editText_hint_sharingText"
