@@ -6,8 +6,7 @@ Unlike explicit intent where we provide the current context and target component
 
 ## Related methods
 - The look of constructor is same as that of explicit intent, but parameters are different  :
-
-`Intent(String action, Uri uri)` 
+ `Intent(String action, Uri uri)` 
     The primary pieces of implicit intent are **action** and **data**. Notice that here we don't mention target activity.
 
 - After defining implcit intent, we ask the system to examine the current app whether there's any activity that can handle our intent  :
