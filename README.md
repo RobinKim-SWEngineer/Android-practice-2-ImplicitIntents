@@ -1,5 +1,4 @@
 # Android-practice-2-ImplicitIntents
-Use of implicit intents
 
 ![Alt Text](https://github.com/RobinKim-SWEngineer/Images-for-document/blob/master/ImplicitIntents.gif)
 
