@@ -45,17 +45,18 @@ public class MainActivity extends AppCompatActivity {
          *  It needs PackageManger instance for investigation, which is matching Intent action and data
          *  with the Intent filters for the app in the Manifest.xml file.
          */
-//        try {
-//            startActivity(viewingWebPage);
-//        } catch (ActivityNotFoundException exception) {
-//            Log.d("ImplicitIntents", exception.getMessage());
-//        }
 
         if (viewingWebPage.resolveActivity(getPackageManager()) != null) {
             startActivity(viewingWebPage);
         } else {
             Log.d("ImplicitIntents","Couldn't find any qualified activity to handle this intent");
         }
+
+//        try {
+//            startActivity(viewingWebPage);
+//        } catch (ActivityNotFoundException exception) {
+//            Log.d("ImplicitIntents", exception.getMessage());
+//        }
     }
 
     public void openLocation(View view) {
@@ -64,16 +65,16 @@ public class MainActivity extends AppCompatActivity {
 
         Intent viewingLocation = new Intent(Intent.ACTION_VIEW, locationUri);
 
-        try {
+        if (viewingLocation.resolveActivity(getPackageManager()) != null) {
             startActivity(viewingLocation);
-        } catch (ActivityNotFoundException exception) {
-            Log.d("ImplicitIntents", exception.getMessage());
+        } else {
+            Log.d("ImplicitIntents", "Couldn't find any qualified activity to handle this intent");
         }
 
-//        if (viewingLocation.resolveActivity(getPackageManager()) != null) {
+//        try {
 //            startActivity(viewingLocation);
-//        } else {
-//            Log.d("ImplicitIntents", "Couldn't find any qualified activity to handle this intent");
+//        } catch (ActivityNotFoundException exception) {
+//            Log.d("ImplicitIntents", exception.getMessage());
 //        }
     }
 
