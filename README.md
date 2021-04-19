@@ -2,10 +2,10 @@
 
 ![Alt Text](https://github.com/RobinKim-SWEngineer/Images-for-document/blob/master/ImplicitIntents.gif)
 
-Unlike implicit intent where we provide the current context and target component, **explicit intent** needs type of action and data for that action specified. Later on system finds any Activity that *can handle* that implicit intent, and if so, we start the Activity.
+Unlike explicit intent where we provide the current context and target component, **explicit intent** needs type of action and data for that action specified. Later on system finds any Activity that *can handle* that implicit intent, and if so, we start the Activity.
 
 ## Related methods
-- The look of constructor is same as that of implicit intent, but parameters are different  :
+- The look of constructor is same as that of explicit intent, but parameters are different  :
 `Intent(String action, Uri uri)` 
     The primary pieces of implicit intent are **action** and **data**. Notice that here we don't mention target activity.
 
