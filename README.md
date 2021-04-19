@@ -24,6 +24,8 @@ Unlike explicit intent where we provide the current context and target component
 - **ShareCompat.IntentBuilder** is a helper class for constructing sharing intents. Upon getting an IntentBuilder instance via 
   `.from(Activity launchingActivity)`, we subsequently call setters for necessary information and finally, start a chooser.
 
+
 >> Since Android 11 ( API level 30 or higher ) there is default system **visibility filtering** which affects the return result of methods that query for the information about the other apps on the device. In such case, we need to **declare package visibility needs** so our application can access other apps.
+
 
 For more detail implementation of **Implicit Intent** for each step please refer to the attached example.
