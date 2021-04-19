@@ -7,6 +7,7 @@ Unlike explicit intent where we provide the current context and target component
 ## Related methods
 - The look of constructor is same as that of explicit intent, but parameters are different  :
  `Intent(String action, Uri uri)` 
+ 
  The primary pieces of implicit intent are **action** and **data**. Notice that here we don't mention target activity.
 
 - After defining implcit intent, we ask the system to examine the current app whether there's any activity that can handle our intent  :
@@ -21,7 +22,8 @@ Unlike explicit intent where we provide the current context and target component
         Log.d(tag: "ImplicitIntents", msg: "Couldn't find any qualified activity to handle this intent")
     }
     ```
-- **ShareCompat.IntentBuilder** is a helper class for constructing sharing intents. Upon getting an IntentBuilder instance via `.from(Activity launchingActivity)`, we subsequently call setters for necessary information and finally, start a chooser.
+- **ShareCompat.IntentBuilder** is a helper class for constructing sharing intents. Upon getting an IntentBuilder instance via 
+  `.from(Activity launchingActivity)`, we subsequently call setters for necessary information and finally, start a chooser.
 
 >> Since Android 11 ( API level 30 or higher ) there is default system **visibility filtering** which affects the return result of methods that query for the information about the other apps on the device. In such case, we need to **declare package visibility needs** so our application can access other apps.
 
