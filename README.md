@@ -2,7 +2,7 @@
 
 ![Alt Text](https://github.com/RobinKim-SWEngineer/Images-for-document/blob/master/ImplicitIntents.gif)
 
-Unlike explicit intent where we provide the current context and target component, **Implicit intent** needs type of action and data for that action specified. Later on system finds some other app's Activity that *can handle* that implicit intent, and if so, we start the Activity.
+Unlike explicit intent where we provide the current context and target component, **Implicit intent** needs type of action and data for that action specified. Later on Android system examines other app's **intent-filters** in AndroidManifest.xml file and finds activity that *can handle* that implicit intent, and if so, we start the Activity.
 
 ## Related methods
 - The look of constructor is same as that of explicit intent, but parameters are different  :
