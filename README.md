@@ -4,6 +4,8 @@
 
 Unlike explicit intent where we provide the current context and target component, **Implicit intent** needs type of action and data for that action specified. Later on Android system examines other app's **intent-filters** in AndroidManifest.xml file and finds activity that *can handle* that implicit intent, and if so, we start the Activity.
 
+We can also think about the other way around. We can allow our app to respond to ( or receive ) an implicit intent *sent from some other app* by specifying it through **intent-filters** in the AndroidManifest.xml file.
+
 ## Related methods
 - The look of constructor is same as that of explicit intent, but parameters are different  :
  `Intent(String action, Uri uri)` 
